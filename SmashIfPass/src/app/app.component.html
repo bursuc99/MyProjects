@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      &#9776;
+    </button>
+
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <ul class="navbar-nav col-9">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/FirstPage'" (click)="isMenuCollapsed = true">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="!isLogIn" (click)="setMyAccount()">MyAccount</a>
+        </li>
+      </ul>
+      <button type="button" *ngIf="isLogIn" class="nav-item border btn btn-success col-sm-3 col-md-1 mt-md-3 mb-3 mx-md-auto" [routerLink]="'/LogIn'" (click)="isMenuCollapsed = true">Sign in</button>
+      <button type="button" *ngIf="isLogIn" class="nav-item border btn btn-primary col-sm-3 col-md-1 mt-md-3 mb-3 mx-md-auto" [routerLink]="'/RegisterForm'" (click)="isMenuCollapsed = true">Sign up</button>
+      <button type="button" *ngIf="!isLogIn" class="nav-item border btn btn-primary col-sm-3 col-md-1 mt-md-3 mb-3 mx-md-auto" [routerLink]="'/FirstPage'" (click)="LogOut()">Log out</button>
+
+
+    </div>
+
+</nav>
+<router-outlet></router-outlet>

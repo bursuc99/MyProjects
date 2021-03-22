@@ -1,0 +1,37 @@
+<div class="row">
+
+    <ngb-accordion class="col-md-3" [closeOthers]="true" activeIds="static-1">
+        <ngb-panel id="static-1" title="Account">
+            <ng-template ngbPanelContent>
+                <div class="row">
+                    <button type="button" class="border btn btn-primary col-md-6 mt-3 mb-3" (click)="showDiv1()">Modify Data</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="border btn btn-primary col-md-6 mt-3 mb-3" (click)="showDiv2()">View Profile</button>
+                </div>
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel id="static-2" title="Chat">
+            <ng-template ngbPanelContent>
+
+                <div class="row" *ngFor="let user of USERS ;  let i = index" [attr.data-index]="i">
+                    <button type="button" class="border btn btn-primary col-md-6 mt-3 mb-3" (click)="showDiv3(i)">{{ user.matchedUser.firstName }}</button>
+                </div>
+
+            </ng-template>
+        </ngb-panel>
+    </ngb-accordion>
+
+    <div class="wrapper col-md-8" style="height:80vh;">
+        <div id="div1" style="display:none; background-color: gainsboro; height:80vh; width: 100%;">
+            <app-edit-form [myAccount]="myAccount"></app-edit-form>
+        </div>
+        <div id="div2" style="display:none; background-color: gainsboro; height:80vh; width: 100%;">
+            <app-card [myAccount]="myAccount"></app-card>
+        </div>
+        <div  id="div3" style="display:none; background-color: gainsboro; height:80vh; width: 100%;">
+            <app-chat  [parentSubject]="parentSubject" *ngIf="selectedUser!=-1" [idOwner]="myAccount" [idMatched] = "USERS[selectedUser].matchedUser "></app-chat>
+        </div>
+    </div>
+
+</div>

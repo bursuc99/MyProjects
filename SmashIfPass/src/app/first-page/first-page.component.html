@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="main">
+
+    <div id="first">
+
+        <div class="row">
+            <img class="col-6 mb-5 mx-auto" src="../../assets/static/photos/logo.png" alt="Card image cap">
+        </div>
+
+        <div class="row">
+            <p class="description font-weight-bold text-center col-md-4 col-sm-10 mb-3 mx-auto">Are you a student at the beautiful Tehnical University of Cluj-Napoca? Do you find these online time are eating your soul especially when you need to prepare for an exam? No problem! We got you. Just use {{applicationName}}</p>
+        </div>
+
+    </div>
+
+    <div *ngIf="!isLogIn">
+      <h1 style="text-align:center; padding:30px">
+
+        Please Log In to search for students!
+        </h1>
+    </div>
+
+    <div class="row col-md-8 col-sm-12 mx-auto mt-5 mb-3" *ngIf="isLogIn">
+        <div ngbDropdown class="col-md-3 col-sm-1 mx-auto">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>An studiu</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button (click)="changeYear(year)" *ngFor="let year of years" ngbDropdownItem>{{year}}</button>
+            </div>
+        </div>
+        <div ngbDropdown class="col-md-3 col-sm-1 mx-auto">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Materie</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button (click)="changeSubject(skill)" *ngFor="let skill of skills" ngbDropdownItem>{{skill}}</button>
+            </div>
+        </div>
+        <div ngbDropdown class="col-md-3 col-sm-1 mx-auto">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Tip</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button (click)="changeType(type)" *ngFor="let type of types" ngbDropdownItem>{{type}}</button>
+            </div>
+        </div>
+
+        <button (click)="searchUser()" class="search col-md-3 col-sm-1 mx-auto"><i class="fa fa-search"></i></button>
+    </div>
+
+    <div class="mx-auto" style="width:70%;background-color: blanchedalmond;display:flex;justify-content: space-around;">
+        <label>{{selectedYear}}</label>
+        <label>{{selectedSubject}}</label>
+        <label>{{selectedType}}</label>
+    </div>
+
+    <div *ngIf="usersCount >= 0 && usersCount < usersSearched.length" class="row col-md-8 col-sm-10 mx-auto">
+        <app-card (newSwitchEvent)="addItem($event,userAccount.id)" [myAccount]="userAccount" class="mx-auto mt-3 mb-3"></app-card>
+    </div>
+
+    <div *ngIf="(usersCount == -1 || usersCount >= usersSearched.length) && isLogIn" style="width:70%;margin-left:15%;">
+        <h2 style="text-align:center;background-color:blanchedalmond;padding:3%;margin-top:3rem;border-radius:10px">You should choose one</h2>
+    </div>
+
+    <div style="background-color: blanchedalmond; color:black">
+      <h6 style="text-align:center;padding:20px">
+      This project was designed by {{name1}}, {{name2}}, {{name3}}.
+      </h6>
+    </div>
+
+
+</div>

@@ -1,0 +1,35 @@
+<div class="row" style="height:80vh; overflow-x: hidden;
+overflow-y: auto; ">
+
+    <div class="col-md-6" style="background-color: gainsboro">
+        <div class="row pl-5" style="height:5vh; font-size: large; font-weight: bold; background-color: burlywood;">
+            {{idOwner.firstName}}
+        </div>
+        <div *ngFor="let message of conversation">
+            <div class="row pl-1" style="height:5vh; border-top: black solid 2px;">
+                <div [hidden]="idOwner.id != message.ownerUser.id">{{message.message}}</div>
+            </div>
+        </div>
+        <div *ngFor="let userMessage of conversation">
+            <div class="row pl-1" style="height:5vh; border-top: black solid 2px;">
+            </div>
+        </div>
+    </div>
+
+    <div id="fixed" class="col-md-6" style="background-color: grey;">
+        <div class="row pl-5" style="height:5vh; font-size: large; font-weight: bold; background-color: rgb(206,149,75);">
+            {{idMatched.firstName}}
+        </div>
+        <div *ngFor="let message of conversation">
+            <div class="row pl-1" style="height:5vh; border-top: black solid 2px;">
+                <div [hidden]="idMatched.id != message.ownerUser.id">{{message.message}}</div>
+            </div>
+        </div>
+        <div *ngFor="let userMessage of conversation">
+            <div class="row pl-1" style="height:5vh; border-top: black solid 2px;"></div>
+        </div>
+    </div>
+
+</div>
+
+<input class="row col-md-6" type="text" (keydown.enter)="sendMessage()" [(ngModel)]="msg">

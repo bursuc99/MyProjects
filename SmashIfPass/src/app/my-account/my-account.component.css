@@ -1,0 +1,7 @@
+.wrapper{
+    position: relative;
+  }
+  
+  #div1, #div2, #div3{
+    position: absolute;
+  }

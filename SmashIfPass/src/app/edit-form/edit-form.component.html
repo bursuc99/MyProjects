@@ -1,0 +1,304 @@
+<body>
+<form>
+
+<div *ngIf="!SignUpResponse" >
+  <h1>
+    Email already Used to Register!
+    </h1>
+</div>
+
+<div class="form-group">
+  <div class ="row">
+
+    <div class="col-md-5 mb-3">
+      <label for="Nume">Nume</label>
+        <input
+        required
+        minlength="3"
+        maxlength="20"
+        pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+"
+        ngModel
+        [(ngModel)]="myAccount.lastName"
+        name="Nume"
+        #Nume="ngModel"
+        id="Nume"
+        type="text"
+        class="form-control"
+        >
+      <div
+        class="alert alert-danger"
+        *ngIf="Nume.touched && !Nume.valid">
+        <div *ngIf="Nume.errors.required">
+          Numele trebuie completat!
+        </div>
+        <div *ngIf="Nume.errors.minlength">
+          Lungimea minima a numelui este de {{Nume.errors.minlength.requiredLength}} caractere
+        </div>
+        <div *ngIf="Nume.errors.pattern">
+          Numele poate contine doar litere sau '-' .
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-5 mb-3">
+      <label for="Prenume">Prenume</label>
+      <input
+      required
+      minlength="3"
+      maxlength="50"
+      pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+"
+      ngModel
+      [(ngModel)]="myAccount.firstName"
+      name="Prenume"
+      #Prenume="ngModel"
+      id="Prenume"
+      type="text"
+      class="form-control"
+      >
+      <div
+        class="alert alert-danger"
+        *ngIf="Prenume.touched && !Prenume.valid">
+        <div *ngIf="Prenume.errors.required">
+          Prenumele trebuie completat!
+        </div>
+        <div *ngIf="Prenume.errors.minlength">
+          Lungimea minima a Prenumelui este de {{Prenume.errors.minlength.requiredLength}} caractere
+        </div>
+        <div *ngIf="Prenume.errors.pattern">
+          Prenumele poate contine doar litere sau '-' .
+        </div>
+      </div>
+    </div>
+
+  </div>
+ </div>
+
+
+<div class="form-group">
+  <div class ="row">
+
+    <div class="col-md-5 mb-3">
+      <label for="Email">Email address</label>
+      <input
+      required
+      maxlength="50"
+      pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+      ngModel
+      [(ngModel)]="myAccount.email"
+      name="Email"
+      #Email="ngModel"
+      type="text"
+      class="form-control"
+      id="Email"
+      >
+      <div
+        class="alert alert-danger"
+        *ngIf="Email.touched && !Email.valid">
+        <div *ngIf="Email.errors.required">
+          Adresa de email trebuie completata!
+        </div>
+        <div *ngIf="Email.errors.pattern">
+          Introduceti o adresa de email valida!
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-5 mb-3">
+        <label for="Facebook">Facebook</label>
+        <input
+        required
+        maxlength="50"
+        pattern="(?:https?:\/\/)?(?:www\.)?facebook\.com\/.(?:(?:\w)*#!\/)?(?:pages\/)?(?:[\w\-]*\/)*([\w\-\./]*)"
+        ngModel
+        [(ngModel)]="myAccount.fbLink"
+        name="Facebook"
+        #Facebook="ngModel"
+        type="text"
+        class="form-control"
+        id="Facebook"
+        >
+
+        <div
+          class="alert alert-danger"
+          *ngIf="Facebook.touched && !Facebook.valid">
+          <div *ngIf="Facebook.errors.required">
+            Trebuie completat campul Facebook!
+          </div>
+          <div *ngIf="Facebook.errors.pattern">
+            Introduceti o adresa de facebook valida.
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="overlay" *ngIf="finishedRegistering">
+  <a href="http://localhost:4200/FirstPage"> Press me</a>
+</div>
+
+<div class="form-group">
+  <div class ="row">
+
+    <div class="col-md-5 mb-3">
+      <label for="Linkedin">Linkedin</label>
+      <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="myAccount.igLink"
+      name="Linkedin"
+      id="Linkedin"
+      >
+    </div>
+
+    <div class="col-md-5 mb-3">
+        <label for="GitHub">GitHub</label>
+        <input
+        type="text"
+        [(ngModel)]="myAccount.gitLink"
+        name="Github"
+        class="form-control"
+        id="GitHub"
+        >
+    </div>
+
+  </div>
+</div>
+
+<div class="form-group">
+  <div class ="row">
+
+    <div class="col-md-5 mb-3">
+        <label for="Password">Password</label>
+        <input
+        required
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$"
+        maxlength="50"
+        ngModel
+        name="Parola"
+        #Parola="ngModel"
+        [(ngModel)]="myAccount.password"
+        type="password"
+        class="form-control"
+        id="Password"
+        placeholder="Password"
+        (keyup)="VerifyPassword()"
+        >
+
+        <div
+          class="alert alert-danger"
+          *ngIf="Parola.touched && !Parola.valid">
+          <div *ngIf="Parola.errors.required">
+            Trebuie completata parola
+          </div>
+          <div *ngIf="Parola.errors.pattern">
+             Parola trebuie sa contina minim :
+              <p>- 1 litera mare
+              <p>- 1 litera mica
+              <p>- 1 un numar
+              <p>- 1 caracter special
+              <p> -Trebuie sa aiba intre 8 si 16 caractere
+          </div>
+        </div>
+    </div>
+
+    <div class="col-md-5 mb-3">
+      <label for="ConfirmPassword">Confirm Password</label>
+      <input
+      required
+      maxlength="50"
+      ngModel
+      name="ConfPass"
+      #ConfPass="ngModel"
+      [(ngModel)]="myAccount.password"
+      type="Password"
+      class="form-control"
+      id="ConfirmPassword"
+      placeholder="Confirm Password"
+      (keyup)="VerifyPassword()"
+      [ngStyle]="{'border':VerifyPassword() === true ? '2px solid lightgrey' : '2px solid red' }"
+      >
+
+      <div class="alert alert-danger"
+      *ngIf="!VerifyPassword()">
+        Parolele nu coincid.
+      </div>
+
+        <div
+        class="alert alert-danger"
+          *ngIf="ConfPass.touched && !ConfPass.valid">
+          <div *ngIf="ConfPass.errors.required">
+            Trebuie completat campul Descriere!
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+    <label for="Abilitati">Abilitati</label>
+    <select [(ngModel)]="ability" name="Ability" id="Abilitati">
+      <option *ngFor = "let skill of skills; let i = index" value="{{i}}">{{skill.name}} {{skill.year}} {{skill.type}} </option>
+    </select>
+
+    <button (click)="AddQuality()">Add skill</button>
+
+  </div>
+
+  <div id="AbilitatiDiv" class="row">
+    <div class="col-md-3 col-sm-6 col-xm-12 mx-auto " *ngFor="let quality of myAccount.skills">
+       <p style="text-align:center">#{{quality.name}} {{quality.year}} {{quality.type}}</p>
+     </div>
+  </div>
+
+  <div class="form-group">
+    <label for="Descriere">Descriere</label>
+    <textarea
+    required
+    minlength="20"
+    maxlength="600"
+    ngModel
+    name="Desc"
+    [(ngModel)]="myAccount.description"
+    #Desc="ngModel"
+    class="form-control"
+    id="Descriere"
+    rows="3"></textarea>
+
+    <div
+    class="alert alert-danger"
+      *ngIf="Desc.touched && !Desc.valid">
+      <div *ngIf="Desc.errors.required">
+        Trebuie completat campul Descriere!
+      </div>
+      <div *ngIf="Desc.errors.minlength">
+        Descrierea trebuie sa contina minim {{Desc.errors.minlength.requiredLength}} caractere.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="form-group">
+    <label for="File1">Poza principala</label>
+    <input type="text"  name="profilePhoto"  [(ngModel)] = "myAccount.profilePhoto.picByte" class="form-control-file" id="File1">
+  </div>
+
+  <img class="secondaryPhoto" src={{myAccount.profilePhoto.picByte}}>
+
+  <div class="form-group">
+      <label>Enter address</label>
+      <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
+    </div>
+
+    <agm-map [latitude]="myAccount.locationLatitude" [longitude]="myAccount.locationLongitude" [zoom]="12">
+      <agm-marker [latitude]="myAccount.locationLatitude" [longitude]="myAccount.locationLongitude" [markerDraggable]="true"
+        (dragEnd)="markerDragEnd($event)"></agm-marker>
+    </agm-map>
+
+
+  <button type="submit" (click)="submit()" class="btn btn-primary">Submit</button>
+
+</form>
+</body>

@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="card">
+
+  <div class="row">
+
+    <div class="col-6">
+
+        <div style="margin-left: auto; margin-right: auto; text-align: center;">
+          <div clss="row">
+
+            <button class="arrow col-1 mx-auto" (click)="changeImage(false)"><i class="fa fa-arrow-left" ></i></button>
+            <img class="card-img-top col-8 mx-auto" [src]="this.countImage == -1 ?  this.myAccount.profilePhoto.picByte : this.myAccount.photos[this.countImage].picByte" alt="Card image cap">
+            <button class="arrow col-1 mx-auto" (click)="changeImage(true)"><i class="fa fa-arrow-right" ></i></button>
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">{{myAccount!=undefined ? myAccount.firstName : ""}}&nbsp;{{myAccount!=undefined ? myAccount.lastName : ""}}</h5>
+            <ngb-rating max="5" rate="{{myAccount!=undefined ? 3 : 0}}" readonly="true"></ngb-rating>
+            <p class="card-text">{{myAccount!=undefined ? myAccount.description : ""}}</p>
+          </div>
+        </div>
+
+        <ul class="list-group list-group-flush" style="text-align: center;">
+          <li class="list-group-item" routerLinkActive="active">
+            <a href="{{myAccount.igLink}}">
+            <img src="../../assets/static/photos/linkedin.png" alt="Card image cap" style="width: 20%; padding:5%">
+            </a>
+            <a href="{{myAccount.fbLink}}">
+            <img src="../../assets/static/photos/facebook.png" alt="Card image cap" style="width: 20%; padding:5%">
+            </a>
+            <a href="{{myAccount.gitLink}}">
+            <img src="../../assets/static/photos/github.jpg" alt="Card image cap" style="width: 20%; padding:5%">
+            </a>
+          </li>
+          <li *ngIf="myAccount!=undefined" class="list-group-item">
+            <label *ngFor="let skill of myAccount.skills">
+             #{{skill.name}}
+            </label>
+          </li>
+        </ul>
+    </div>
+
+<div class="col-6">
+    <agm-map [latitude]="myAccount.locationLatitude" [longitude]="myAccount.locationLongitude" [zoom]="12" style="height: 600px">
+      <agm-marker [latitude]="myAccount.locationLatitude" [longitude]="myAccount.locationLongitude"></agm-marker>
+    </agm-map>
+</div>
+
+
+  </div>
+
+
+
+  <div clss="row">
+    <button (click)="changePicture(true)" class="like col-6 mx-auto"><i class="fa fa-check"></i></button>
+    <button (click)="changePicture(false)" class="dislike col-6 mx-auto"><i class="fa fa-times-circle"></i></button>
+  </div>
+
+</div>
