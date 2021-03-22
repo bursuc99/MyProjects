@@ -1,0 +1,24 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$IN 1 1 Reset
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 37 2 8 Output
+$SC 5-33/4
+$IN +5 1 clock
+$BUS IN 74 2 8 input
+$SC 42-70/4
+$BUS OUT +37 2 8 alu_verificare
+$SC 75-+28/4
+I 3 "a#29#std_logic_vector(15 downto 0)1 ricd15 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +69 3 16 inst
+$SC 108-+60/4
+$S +5 1 CLK
+$OUT +4 1 write_strobe
+$OUT +4 1 0 7 read
+$BUS S +36 2 8 program_counter_out
+$SC 185-+28/4
+I 4 "a#17#reg8(15 downto 0)1 ricd15 0 a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 730 4 16 reg_matrix
+$SC 218-726/4
+$ENDWAVE

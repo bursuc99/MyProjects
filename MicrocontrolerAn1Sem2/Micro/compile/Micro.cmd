@@ -1,0 +1,1 @@
+-w -s "E:\Microcontroler\library.cfg"  -j "E:\Microcontroler\Micro\projlib.cfg"  -d "E:\Microcontroler\Micro\compile\"  -work Micro -dbg -e 100 "E:\Microcontroler\Micro\src\stack.vhd" 

@@ -1,0 +1,216 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom $DSN/src/logicblock.vhd $DSN/src/sum.vhd $DSN/src/shiftright.vhd $DSN/src/shiftleft.vhd $DSN/src/alu.vhd "$DSN/src/instruction_decoding .vhd" $DSN/src/instruction-memory.vhd $DSN/src/registers.vhd $DSN/src/package_types.vhd $DSN/src/port_id_control.vhd $DSN/src/big_black_box.vhd $DSN/src/mux21on8.vhd $DSN/src/clock_divider.vhd $DSN/src/afisoare.vhd $DSN/src/interrupt.vhd "$DSN/src/program _flow .vhd" $DSN/src/stack.vhd $DSN/src/numaratoruuu.vhd
+# Compile...
+# File: E:\Microcontroler\Micro\src\LogicBlock.vhd
+# Compile Entity "load"
+# Entity `load' has been skipped - no difference detected.
+# Compile Architecture "arh1" of Entity "load"
+# Compile Entity "SxandSy"
+# Entity `SxandSy' has been skipped - no difference detected.
+# Compile Architecture "arh1" of Entity "SxandSy"
+# Compile Entity "SxORSy"
+# Entity `SxORSy' has been skipped - no difference detected.
+# Compile Architecture "arh1" of Entity "SxORSy"
+# Compile Entity "SxXORSy"
+# Entity `SxXORSy' has been skipped - no difference detected.
+# Compile Architecture "arh1" of Entity "SxXORSy"
+# Compile Entity "logical"
+# Entity `logical' has been skipped - no difference detected.
+# Compile Architecture "arh1" of Entity "logical"
+# File: E:\Microcontroler\Micro\src\Sum.vhd
+# Compile Entity "onebitfulladder"
+# Entity `onebitfulladder' has been skipped - no difference detected.
+# Compile Architecture "arh1" of Entity "onebitfulladder"
+# Compile Entity "onebitfullsub"
+# Entity `onebitfullsub' has been skipped - no difference detected.
+# Compile Architecture "arh1" of Entity "onebitfullsub"
+# Compile Entity "Mux21on1"
+# Entity `Mux21on1' has been skipped - no difference detected.
+# Compile Architecture "arhmux" of Entity "Mux21on1"
+# Compile Entity "eightbitfulladder"
+# Entity `eightbitfulladder' has been skipped - no difference detected.
+# Compile Architecture "arh1" of Entity "eightbitfulladder"
+# Compile Entity "SUB"
+# Entity `SUB' has been skipped - no difference detected.
+# Compile Architecture "arhsub" of Entity "SUB"
+# Compile Entity "sumaddbox"
+# Entity `sumaddbox' has been skipped - no difference detected.
+# Compile Architecture "subadd" of Entity "sumaddbox"
+# File: E:\Microcontroler\Micro\src\Shiftright.vhd
+# Compile Entity "ShiftRight"
+# Entity `ShiftRight' has been skipped - no difference detected.
+# Compile Architecture "arhshift" of Entity "ShiftRight"
+# File: E:\Microcontroler\Micro\src\ShiftLeft.vhd
+# Compile Entity "ShiftLeft"
+# Entity `ShiftLeft' has been skipped - no difference detected.
+# Compile Architecture "arhshift" of Entity "ShiftLeft"
+# File: E:\Microcontroler\Micro\src\Alu.vhd
+# Compile Entity "ALU"
+# Entity `ALU' has been skipped - no difference detected.
+# Compile Architecture "ARHALU" of Entity "ALU"
+# File: E:\Microcontroler\Micro\src\Instruction_Decoding .vhd
+# Compile Entity "Decoding"
+# Entity `Decoding' has been skipped - no difference detected.
+# Compile Architecture "inst_decoder" of Entity "Decoding"
+# File: E:\Microcontroler\Micro\src\Instruction-Memory.vhd
+# Compile Entity "RAM"
+# Entity `RAM' has been skipped - no difference detected.
+# Compile Architecture "beh" of Entity "RAM"
+# File: E:\Microcontroler\Micro\src\Registers.vhd
+# Compile Entity "registers"
+# Entity `registers' has been skipped - no difference detected.
+# Compile Architecture "arh_reg" of Entity "registers"
+# File: E:\Microcontroler\Micro\src\package_types.vhd
+# Compile Package "types"
+# Package `types' has been skipped - no difference detected.
+# File: E:\Microcontroler\Micro\src\Port_Id_Control.vhd
+# Compile Entity "port_id"
+# Entity `port_id' has been skipped - no difference detected.
+# Compile Architecture "arh_port" of Entity "port_id"
+# File: E:\Microcontroler\Micro\src\BIG_Black_Box.vhd
+# Compile Entity "big_box"
+# Entity `big_box' has been skipped - no difference detected.
+# Compile Architecture "doamne_ajuta" of Entity "big_box"
+# File: E:\Microcontroler\Micro\src\Mux21on8.vhd
+# Compile Entity "Mux21on8"
+# Entity `Mux21on8' has been skipped - no difference detected.
+# Compile Architecture "arh1" of Entity "Mux21on8"
+# File: E:\Microcontroler\Micro\src\clock_divider.vhd
+# Compile Entity "Freq_div_1Hz"
+# Entity `Freq_div_1Hz' has been skipped - no difference detected.
+# Compile Architecture "Behavioral" of Entity "Freq_div_1Hz"
+# File: E:\Microcontroler\Micro\src\afisoare.vhd
+# Compile Entity "Displayer"
+# Entity `Displayer' has been skipped - no difference detected.
+# Compile Architecture "Behavioral" of Entity "Displayer"
+# File: E:\Microcontroler\Micro\src\Interrupt.vhd
+# Compile Entity "INTERRUPT_CONTROL"
+# Entity `INTERRUPT_CONTROL' has been skipped - no difference detected.
+# Compile Architecture "INTERRUPT_CONTROL" of Entity "INTERRUPT_CONTROL"
+# File: E:\Microcontroler\Micro\src\program _flow .vhd
+# Compile Entity "FLOW_CONTROL"
+# Entity `FLOW_CONTROL' has been skipped - no difference detected.
+# Compile Architecture "FLOW_CONTROL" of Entity "FLOW_CONTROL"
+# File: E:\Microcontroler\Micro\src\stack.vhd
+# Compile Entity "STACK"
+# Entity `STACK' has been skipped - no difference detected.
+# Compile Architecture "STACK" of Entity "STACK"
+# Error: COMP96_0031: stack.vhd : (32, 12): Simple expression expected.
+# Error: COMP96_0015: stack.vhd : (32, 62): ')' expected.
+# Error: COMP96_0019: stack.vhd : (33, 13): Keyword "then" expected.
+# Error: COMP96_0019: stack.vhd : (53, 7): Keyword "process" expected.
+# Error: COMP96_0015: stack.vhd : (54, 9): ';' expected.
+# Error: COMP96_0016: stack.vhd : (54, 16): Design unit declaration expected.
+# File: E:\Microcontroler\Micro\src\Numaratoruuu.vhd
+# Compile Entity "PROGRAM_COUNTER"
+# Entity `PROGRAM_COUNTER' has been skipped - no difference detected.
+# Compile Architecture "PROGRAM_COUNTER" of Entity "PROGRAM_COUNTER"
+# Compile failure 6 Errors 0 Warnings  Analysis time :  5.0 [s]
+acom $DSN/src/stack.vhd
+# Compile...
+# File: E:\Microcontroler\Micro\src\stack.vhd
+# Compile Entity "STACK"
+# Entity `STACK' has been skipped - no difference detected.
+# Compile Architecture "STACK" of Entity "STACK"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+asim -advdataflow  big_box doamne_ajuta
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2656 kB (elbread=1072 elab2=510 kernel=1074 sdf=0)
+# 10:59 AM, Tuesday, May 21, 2019
+# Simulation has been initialized
+# Selected Top-Level: big_box (doamne_ajuta)
+run 100 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+restart
+# All when statements cleared.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2656 kB (elbread=1072 elab2=510 kernel=1074 sdf=0)
+# 11:01 AM, Tuesday, May 21, 2019
+# Simulation has been initialized
+# Selected Top-Level: big_box (doamne_ajuta)
+run 100 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Reg_memory,  Process: line__50.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+# Simulation has been stopped

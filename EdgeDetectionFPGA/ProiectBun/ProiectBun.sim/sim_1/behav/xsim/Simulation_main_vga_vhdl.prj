@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ProiectBun.srcs/sources_1/new/Main.vhd" \
+"../../../../ProiectBun.srcs/sources_1/new/VGA.vhd" \
+"../../../../ProiectBun.srcs/sources_1/new/debounce.vhd" \
+"../../../../ProiectBun.srcs/sources_1/new/flipflop.vhd" \
+"../../../../ProiectBun.srcs/sim_1/new/Simulation_main_vga.vhd" \
+
+# Do not sort compile order
+nosort

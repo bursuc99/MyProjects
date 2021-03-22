@@ -1,0 +1,80 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=Micro
+
+[Library]
+Micro=.\Micro.lib
+
+[$LibMap$]
+Micro=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=big_box|doamne_ajuta|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/LogicBlock.vhd=-1
+/Sum.vhd=-1
+/Shiftright.vhd=-1
+/ShiftLeft.vhd=-1
+/Alu.vhd=-1
+/WaveformAlu-test.awf=-1
+/Instruction_Decoding .vhd=-1
+/Instruction-Memory.vhd=-1
+/Registers.vhd=-1
+/package_types.vhd=-1
+/Port_Id_Control.vhd=-1
+/BIG_Black_Box.vhd=-1
+/Mux21on8.vhd=-1
+/C:\My_Designs\Microcontroler\Micro\src\Waveform Editor 1.awf=-1
+/clock_divider.vhd=-1
+/afisoare.vhd=-1
+/Buna-iDoamne.awf=-1
+/Interrupt.vhd=-1
+/program _flow .vhd=-1
+/stack.vhd=-1
+/Numaratoruuu.vhd=-1
+
+[Files.Data]
+.\src\LogicBlock.vhd=VHDL Source Code
+.\src\Sum.vhd=VHDL Source Code
+.\src\Shiftright.vhd=VHDL Source Code
+.\src\ShiftLeft.vhd=VHDL Source Code
+.\src\Alu.vhd=VHDL Source Code
+.\src\WaveformAlu-test.awf=Waveform File
+.\src\Instruction_Decoding .vhd=VHDL Source Code
+.\src\Instruction-Memory.vhd=VHDL Source Code
+.\src\Registers.vhd=VHDL Source Code
+.\src\package_types.vhd=VHDL Source Code
+.\src\Port_Id_Control.vhd=VHDL Source Code
+.\src\BIG_Black_Box.vhd=VHDL Source Code
+.\src\Mux21on8.vhd=VHDL Source Code
+C:\My_Designs\Microcontroler\Micro\src\Waveform Editor 1.awf=Waveform File
+.\src\clock_divider.vhd=VHDL Source Code
+.\src\afisoare.vhd=VHDL Source Code
+.\src\Buna-iDoamne.awf=Waveform File
+.\src\Interrupt.vhd=VHDL Source Code
+.\src\program _flow .vhd=VHDL Source Code
+.\src\stack.vhd=VHDL Source Code
+.\src\Numaratoruuu.vhd=VHDL Source Code
+

@@ -1,0 +1,44 @@
+elbread.dll ver. 1.0.5.365 Tue May 21 11:01:08 2019
+
+
+------------------------------------------------
+Entity             | Architecture      | Library
+------------------------------------------------
+big_box            | doamne_ajuta      | Micro
+program_counter    | program_counter   | micro
+flow_control       | flow_control      | micro
+stack              | stack             | micro
+interrupt_control  | interrupt_control | micro
+displayer          | behavioral        | micro
+freq_div_1hz       | behavioral        | micro
+ram                | beh               | micro
+decoding           | inst_decoder      | micro
+registers          | arh_reg           | micro
+alu                | arhalu            | micro
+port_id            | arh_port          | micro
+mux21on8           | arh1              | micro
+logical            | arh1              | micro
+sumaddbox          | subadd            | micro
+shiftright         | arhshift          | micro
+shiftleft          | arhshift          | micro
+load               | arh1              | micro
+sxandsy            | arh1              | micro
+sxorsy             | arh1              | micro
+sxxorsy            | arh1              | micro
+eightbitfulladder  | arh1              | micro
+sub                | arhsub            | micro
+mux21on1           | arhmux            | micro
+onebitfulladder    | arh1              | micro
+onebitfullsub      | arh1              | micro
+------------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+numeric_std         | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+types               | Micro
+-----------------------------

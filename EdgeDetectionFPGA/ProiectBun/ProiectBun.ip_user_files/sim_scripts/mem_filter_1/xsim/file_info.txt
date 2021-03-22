@@ -1,0 +1,2 @@
+mem_filter.v,verilog,xil_defaultlib,../../../../ProiectBun.srcs/sources_1/ip/mem_filter_1/sim/mem_filter.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

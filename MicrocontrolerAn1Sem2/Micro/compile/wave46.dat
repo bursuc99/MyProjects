@@ -1,0 +1,192 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$IN 1 1 Reset
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 37 2 8 sx_out
+$SC 5-33/4
+I 3 "a#28#std_logic_vector(1 downto 0)1 ricd1 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 46 3 2 port_cmd
+$SC 38 +4
+$BUS S 79 2 8 sy_out
+$SC 47-75/4
+$BUS S +37 2 8 last_port_id
+$SC 80-+28/4
+$BUS S +37 2 8 Output
+$SC 113-+28/4
+$IN +5 1 clock
+$BUS IN +36 2 8 input
+$SC 150-+28/4
+$BUS OUT +37 2 8 alu_verificare
+$SC 183-+28/4
+I 4 "a#29#std_logic_vector(15 downto 0)1 ricd15 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +69 4 16 inst
+$SC 216-+60/4
+$S +5 1 CLK
+$OUT +4 1 write_strobe
+$OUT +4 1 0 7 read
+$BUS S +36 2 8 program_counter_out
+$SC 293-+28/4
+I 5 "a#17#reg8(15 downto 0)1 ricd15 0 a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 838 5 16 reg_matrix
+$SC 326-834/4
+I 6 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +37 6 4 sy_adr
+$SC 855-+12/4
+$BUS S +21 6 4 1 4 x
+$SC 872-+12/4
+$IN 1 0 Reset
+$IN 146 0 clock
+$BUS IN 889 2 8 input
+$SC 150-+28/4
+$OUT 289 0 read_strobe
+$OUT +-4 0 0 7 write
+$BUS S 890 2 8 program_counter_out
+$SC 293-+28/4
+$BUS S 891 4 16 inst
+$SC 216-+60/4
+$BUS S 924 2 8 port_id_out
+$SC 892-+28/4
+$BUS S +5 2 8 last_port_id
+$SC 80-+28/4
+$BUS S 926 2 8 Output
+$SC 113-+28/4
+$S 281 0 CLK
+$IN 146 0 clock
+$S 927 1 reg_input_cmd
+$BUS S +36 2 8 input_registers
+$SC 931-+28/4
+$BUS S +5 6 4 sx_adr
+$SC 872-+12/4
+$IN 1 0 Reset
+$S 965 1 port_enable
+I 7 "a#28#std_logic_vector(6 downto 0)1 ricd6 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT +32 7 7 dis_info
+$SC 969-+24/4
+$BUS S +5 2 8 program_counter_out
+$SC 293-+28/4
+$S 999 1 16 1 rese
+$BUS OUT +20 6 4 sel_dis
+$SC +-16-+12/4
+$BUS S +5 4 16 inst
+$SC 216-+60/4
+I 8 "a#28#std_logic_vector(4 downto 0)1 ricd4 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +765 8 5 alu_cmd
+$SC +-20-+16/4
+$BUS S +25 8 5 flow_cmd
+$SC +-20-+16/4
+$BUS S +5 6 4 sy_adr
+$SC 855-+12/4
+$BUS S +229 2 8 const
+$SC +-32-+28/4
+$BUS S +5 2 8 sx_out
+$SC 5-33/4
+$BUS S 1098 3 2 port_cmd
+$SC 38 +4
+$OUT 285 0 write_strobe
+$IN +814 1 INTERRUPT
+$BUS OUT +4 2 8 alu_verificare
+$SC 183-+28/4
+$BUS IN +893 2 8 input
+$SC 150-+28/4
+$OUT 289 0 read_strobe
+$S +816 1 carryflag
+$S +4 1 zeroflag
+$S +4 1 CARRY
+$BUS S +4 2 8 sy_out
+$SC 47-75/4
+$BUS S 1118 2 8 OUTPUT
+$SC 113-+28/4
+$S +978 1 reg_enable
+$BUS S +36 2 8 ADDRESS
+$SC +-32-+28/4
+$BUS S +37 2 8 OUTPUT_STACK
+$SC +-32-+28/4
+I 9 "e#3#bitc2 01"
+$S +5 9 LOADR
+$BUS S +4 2 8 port_id_out
+$SC 892-+28/4
+$S 281 0 CLK
+$S +913 9 DOWN
+$BUS S +4 2 8 last_port_id
+$SC 80-+28/4
+$S 1199 9 UP
+$BUS S +36 2 8 alu_out
+$SC +-32-+28/4
+$BUS S +37 2 8 someoutput
+$SC +-32-+28/4
+$S +5 1 INT_FLAG
+$S +4 1 INT
+$BUS S +36 2 8 stack_to_counter
+$SC +-32-+28/4
+$S +5 9 LOAD
+$BUS S +4 5 16 reg_matrix
+$SC 326-834/4
+$S +355 0 LOADR
+$BUS S +142 2 8 OUTPUT_STACK
+$SC 1156-+28/4
+$BUS S +148 2 8 stack_to_counter
+$SC +-55-+28/4
+$BUS S +28 2 8 alu_out
+$SC 1203-+28/4
+$BUS S +103 2 8 sy_out
+$SC 47-75/4
+$BUS S 1335 2 8 OUTPUT
+$SC 113-+28/4
+$S 1199 0 UP
+$BUS S +137 5 16 reg_matrix
+$SC 326-834/4
+$BUS S +519 8 5 flow_cmd
+$SC 1042-+16/4
+$BUS S +296 2 8 sx_out
+$SC 5-33/4
+$S 1105 0 carryflag
+$S +4 0 zeroflag
+$S +10 0 reg_enable
+$BUS S +236 2 8 someoutput
+$SC 1236-+28/4
+$S +9 0 INT
+$S +-4 0 INT_FLAG
+$BUS S +87 8 5 alu_cmd
+$SC 1021-+16/4
+$BUS S +320 2 8 last_port_id
+$SC 80-+28/4
+$S 281 0 CLK
+$BUS S 1358 2 8 port_id_out
+$SC 892-+28/4
+$S +193 0 CARRY
+$BUS S +246 2 8 ADDRESS
+$SC 1123-+28/4
+$S +159 0 LOAD
+$S 1194 0 DOWN
+$IN 1 0 Reset
+$BUS S 1360 2 8 const
+$SC 1064-+28/4
+$BUS OUT +269 6 4 sel_dis
+$SC 1003-+12/4
+$OUT 285 0 write_strobe
+$BUS OUT 1362 2 8 alu_verificare
+$SC 183-+28/4
+$S 927 0 reg_input_cmd
+$BUS S +436 2 8 input_registers
+$SC 931-+28/4
+$BUS S +405 3 2 port_cmd
+$SC 38 +4
+$BUS S 1365 4 16 inst
+$SC 216-+60/4
+$S 965 0 port_enable
+$BUS S +401 6 4 sy_adr
+$SC 855-+12/4
+$OUT 289 0 read_strobe
+$S 999 0 program_counter_reset
+$IN 146 0 clock
+$IN +953 0 INTERRUPT
+$BUS IN +268 2 8 input
+$SC 150-+28/4
+$BUS S 1368 6 4 sx_adr
+$SC 872-+12/4
+$BUS OUT +485 7 7 dis_info
+$SC 969-+24/4
+$BUS S +377 2 8 program_counter_out
+$SC 293-+28/4
+$ENDWAVE

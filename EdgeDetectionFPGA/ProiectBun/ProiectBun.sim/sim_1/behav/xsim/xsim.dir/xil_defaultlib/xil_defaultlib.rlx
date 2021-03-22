@@ -1,0 +1,13 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/SSC-LAB/ProiectBun/ProiectBun.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sim_1/new/Simulation_main_vga.vhd,1609892694,vhdl,,,,simulation_main_vga,,,,,,,,
+D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/sim/ROM.v,1609845209,verilog,,,,ROM,,,,,,,,
+D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/sim/blk_mem_gen_0.v,1609845716,verilog,,D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/sim/mem_filter.v,,blk_mem_gen_0,,,,,,,,
+D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/sim/mem_filter.v,1609845260,verilog,,D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/sim/ROM.v,,mem_filter,,,,,,,,
+D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd,1609945777,vhdl,,,,main,,,,,,,,
+D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/VGA.vhd,1605463021,vhdl,,,,vga,,,,,,,,
+D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/debounce.vhd,1605456776,vhdl,,,,debounce,,,,,,,,
+D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/flipflop.vhd,1604709134,vhdl,,,,d_flipflop,,,,,,,,

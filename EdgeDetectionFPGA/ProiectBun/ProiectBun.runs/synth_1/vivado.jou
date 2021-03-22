@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jan  5 13:22:28 2021
+# Process ID: 20060
+# Current directory: D:/SSC-LAB/ProiectBun/ProiectBun.runs/synth_1
+# Command line: vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+# Log file: D:/SSC-LAB/ProiectBun/ProiectBun.runs/synth_1/Main.vds
+# Journal file: D:/SSC-LAB/ProiectBun/ProiectBun.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Main.tcl -notrace

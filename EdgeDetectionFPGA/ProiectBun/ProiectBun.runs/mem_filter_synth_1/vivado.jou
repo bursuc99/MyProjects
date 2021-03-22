@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jan  5 13:14:28 2021
+# Process ID: 26828
+# Current directory: D:/SSC-LAB/ProiectBun/ProiectBun.runs/mem_filter_synth_1
+# Command line: vivado.exe -log mem_filter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mem_filter.tcl
+# Log file: D:/SSC-LAB/ProiectBun/ProiectBun.runs/mem_filter_synth_1/mem_filter.vds
+# Journal file: D:/SSC-LAB/ProiectBun/ProiectBun.runs/mem_filter_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mem_filter.tcl -notrace

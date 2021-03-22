@@ -1,0 +1,339 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jan  5 12:27:24 2021
+# Process ID: 35820
+# Current directory: D:/SSC-LAB/ProiectBun
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34948 D:\SSC-LAB\ProiectBun\ProiectBun.xpr
+# Log file: D:/SSC-LAB/ProiectBun/vivado.log
+# Journal file: D:/SSC-LAB/ProiectBun\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SSC-LAB/ProiectBun/ProiectBun.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 1034.477 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-04:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1039.273 ; gain = 4.797
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8ABCAA
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2347.672 ; gain = 1308.398
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8ABCAA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8ABCAA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8ABCAA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8ABCAA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8ABCAA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8ABCAA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/image.bin.coe' provided. It will be converted relative to IP Instance files '../../../../image.bin.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/amongUs.bin.coe' provided. It will be converted relative to IP Instance files '../../../../amongUs.bin.coe'
+set_property -dict [list CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/amongUs.bin.coe}] [get_ips ROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/amongUs.bin.coe' provided. It will be converted relative to IP Instance files '../../../../amongUs.bin.coe'
+generate_target all [get_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM'...
+catch { config_ip_cache -export [get_ips -all ROM] }
+export_ip_user_files -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+reset_run ROM_synth_1
+launch_runs ROM_synth_1 -jobs 2
+[Tue Jan  5 12:51:28 2021] Launched ROM_synth_1...
+Run output will be captured here: D:/SSC-LAB/ProiectBun/ProiectBun.runs/ROM_synth_1/runme.log
+export_simulation -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/amongUs.bin.coe' provided. It will be converted relative to IP Instance files '../../../../amongUs.bin.coe'
+set_property -dict [list CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/amongUs.bin.coe}] [get_ips mem_filter]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/amongUs.bin.coe' provided. It will be converted relative to IP Instance files '../../../../amongUs.bin.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/SSC-LAB/ProiectBun/ProiectBun.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci' is already up-to-date
+[Tue Jan  5 12:52:46 2021] Launched ROM_synth_1, synth_1...
+Run output will be captured here:
+ROM_synth_1: D:/SSC-LAB/ProiectBun/ProiectBun.runs/ROM_synth_1/runme.log
+synth_1: D:/SSC-LAB/ProiectBun/ProiectBun.runs/synth_1/runme.log
+[Tue Jan  5 12:52:46 2021] Launched impl_1...
+Run output will be captured here: D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8ABCAA
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/utcn.bin.coe' provided. It will be converted relative to IP Instance files '../../../../utcn.bin.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/utcn.bin.coe' provided. It will be converted relative to IP Instance files '../../../../utcn.bin.coe'
+set_property -dict [list CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/utcn.bin.coe}] [get_ips ROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/utcn.bin.coe' provided. It will be converted relative to IP Instance files '../../../../utcn.bin.coe'
+generate_target all [get_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM'...
+catch { config_ip_cache -export [get_ips -all ROM] }
+export_ip_user_files -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+reset_run ROM_synth_1
+launch_runs ROM_synth_1 -jobs 2
+[Tue Jan  5 13:13:36 2021] Launched ROM_synth_1...
+Run output will be captured here: D:/SSC-LAB/ProiectBun/ProiectBun.runs/ROM_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2442.805 ; gain = 0.000
+export_simulation -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/utcn.bin.coe' provided. It will be converted relative to IP Instance files '../../../../utcn.bin.coe'
+set_property -dict [list CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/utcn.bin.coe}] [get_ips mem_filter]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/utcn.bin.coe' provided. It will be converted relative to IP Instance files '../../../../utcn.bin.coe'
+generate_target all [get_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mem_filter'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mem_filter'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mem_filter'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'mem_filter'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mem_filter'...
+catch { config_ip_cache -export [get_ips -all mem_filter] }
+export_ip_user_files -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.xci] -no_script -sync -force -quiet
+reset_run mem_filter_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/SSC-LAB/ProiectBun/ProiectBun.runs/mem_filter_synth_1
+
+launch_runs mem_filter_synth_1 -jobs 2
+[Tue Jan  5 13:14:22 2021] Launched mem_filter_synth_1...
+Run output will be captured here: D:/SSC-LAB/ProiectBun/ProiectBun.runs/mem_filter_synth_1/runme.log
+export_simulation -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.xci] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/SSC-LAB/ProiectBun/ProiectBun.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci' is already up-to-date
+[Tue Jan  5 13:16:22 2021] Launched mem_filter_synth_1, synth_1...
+Run output will be captured here:
+mem_filter_synth_1: D:/SSC-LAB/ProiectBun/ProiectBun.runs/mem_filter_synth_1/runme.log
+synth_1: D:/SSC-LAB/ProiectBun/ProiectBun.runs/synth_1/runme.log
+[Tue Jan  5 13:16:22 2021] Launched impl_1...
+Run output will be captured here: D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 2475.984 ; gain = 30.930
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8ABCAA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/utcn.bin.coe' provided. It will be converted relative to IP Instance files '../../../../utcn.bin.coe'
+set_property -dict [list CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/utcn.bin.coe}] [get_ips blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/SSC-LAB/ProiectBun/utcn.bin.coe' provided. It will be converted relative to IP Instance files '../../../../utcn.bin.coe'
+generate_target all [get_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = de7c5322b88fb2bd; cache size = 17.822 MB.
+export_ip_user_files -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci'
+export_simulation -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci' is already up-to-date
+[Tue Jan  5 13:22:24 2021] Launched synth_1...
+Run output will be captured here: D:/SSC-LAB/ProiectBun/ProiectBun.runs/synth_1/runme.log
+[Tue Jan  5 13:22:24 2021] Launched impl_1...
+Run output will be captured here: D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 2496.988 ; gain = 0.000
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8ABCAA
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Main
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2999.355 ; gain = 250.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Main' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd:20]
+INFO: [Synth 8-3491] module 'debounce' declared at 'D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/debounce.vhd:6' bound to instance 'debouncer1' of component 'debounce' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'debounce' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/debounce.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/debounce.vhd:13]
+INFO: [Synth 8-3491] module 'debounce' declared at 'D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/debounce.vhd:6' bound to instance 'debouncer2' of component 'debounce' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd:196]
+INFO: [Synth 8-3491] module 'debounce' declared at 'D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/debounce.vhd:6' bound to instance 'debouncer3' of component 'debounce' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd:197]
+INFO: [Synth 8-3491] module 'debounce' declared at 'D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/debounce.vhd:6' bound to instance 'debouncer4' of component 'debounce' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd:198]
+INFO: [Synth 8-3491] module 'ROM' declared at 'D:/SSC-LAB/ProiectBun/.Xil/Vivado-35820-DESKTOP-SH7FL3Q/realtime/ROM_stub.v:6' bound to instance 'ROmul' of component 'ROM' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd:200]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [D:/SSC-LAB/ProiectBun/.Xil/Vivado-35820-DESKTOP-SH7FL3Q/realtime/ROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (2#1) [D:/SSC-LAB/ProiectBun/.Xil/Vivado-35820-DESKTOP-SH7FL3Q/realtime/ROM_stub.v:6]
+INFO: [Synth 8-3491] module 'mem_filter' declared at 'D:/SSC-LAB/ProiectBun/.Xil/Vivado-35820-DESKTOP-SH7FL3Q/realtime/mem_filter_stub.v:6' bound to instance 'Memorie' of component 'mem_filter' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd:202]
+INFO: [Synth 8-6157] synthesizing module 'mem_filter' [D:/SSC-LAB/ProiectBun/.Xil/Vivado-35820-DESKTOP-SH7FL3Q/realtime/mem_filter_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mem_filter' (3#1) [D:/SSC-LAB/ProiectBun/.Xil/Vivado-35820-DESKTOP-SH7FL3Q/realtime/mem_filter_stub.v:6]
+INFO: [Synth 8-3491] module 'D_FlipFlop' declared at 'D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/flipflop.vhd:34' bound to instance 'D1' of component 'D_FlipFlop' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'D_FlipFlop' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/flipflop.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'D_FlipFlop' (4#1) [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/flipflop.vhd:42]
+INFO: [Synth 8-3491] module 'D_FlipFlop' declared at 'D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/flipflop.vhd:34' bound to instance 'D2' of component 'D_FlipFlop' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd:216]
+INFO: [Synth 8-3491] module 'VGA' declared at 'D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/VGA.vhd:15' bound to instance 'VGA1' of component 'VGA' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'VGA' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/VGA.vhd:32]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'D:/SSC-LAB/ProiectBun/.Xil/Vivado-35820-DESKTOP-SH7FL3Q/realtime/blk_mem_gen_0_stub.v:6' bound to instance 'U3' of component 'blk_mem_gen_0' [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/VGA.vhd:83]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/SSC-LAB/ProiectBun/.Xil/Vivado-35820-DESKTOP-SH7FL3Q/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (5#1) [D:/SSC-LAB/ProiectBun/.Xil/Vivado-35820-DESKTOP-SH7FL3Q/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/VGA.vhd:85]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/VGA.vhd:100]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/VGA.vhd:117]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/VGA.vhd:130]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/VGA.vhd:143]
+WARNING: [Synth 8-614] signal 'addr1' is read in the process but is not in the sensitivity list [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/VGA.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (6#1) [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/VGA.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Main' (7#1) [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/new/Main.vhd:20]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 3051.473 ; gain = 303.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 3069.406 ; gain = 320.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 3069.406 ; gain = 320.980
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.dcp' for cell 'ROmul'
+INFO: [Project 1-454] Reading design checkpoint 'd:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.dcp' for cell 'Memorie'
+INFO: [Project 1-454] Reading design checkpoint 'd:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.dcp' for cell 'VGA1/U3'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 3091.012 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/SSC-LAB/ProiectBun/ProiectBun.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3171.859 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3171.859 ; gain = 423.434
+34 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:15 . Memory (MB): peak = 3171.859 ; gain = 674.871
+create_bd_design "design_1"
+Wrote  : <D:\SSC-LAB\ProiectBun\ProiectBun.srcs\sources_1\bd\design_1\design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 3269.523 ; gain = 15.020
+generate_target all [get_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <D:\SSC-LAB\ProiectBun\ProiectBun.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+open_bd_design {D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd}
+export_ip_user_files -of_objects  [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd
+Wrote  : <D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+create_bd_design "design_1"
+Wrote  : <D:\SSC-LAB\ProiectBun\ProiectBun.srcs\sources_1\bd\design_1\design_1.bd> 
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd
+file delete -force D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  5 18:00:10 2021...

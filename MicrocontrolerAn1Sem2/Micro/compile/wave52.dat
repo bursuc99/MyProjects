@@ -1,0 +1,29 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$IN 1 1 Reset
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT 37 2 8 Output
+$SC 5-33/4
+$IN +5 1 CLK
+$IN 1 0 Reset
+$BUS OUT 42 2 8 Output
+$SC 5-33/4
+$IN +5 0 CLK
+$BUS OUT +5 2 8 OUTPUT
+$SC 5-33/4
+$BUS IN 76 2 8 INP
+$SC 44-72/4
+$BUS IN +37 2 8 ADDRESS
+$SC 77-+28/4
+I 3 "e#3#bitc2 01"
+$IN +5 3 LOADR
+$IN 1 0 RESET
+$IN 114 3 LOAD
+$BUS OUT +36 2 8 OUTPUT_STACK
+$SC 118-+28/4
+$S +5 1 half_clock
+$BUS S +36 2 8 data
+$SC 155-+28/4
+$IN 38 0 CLK
+$ENDWAVE

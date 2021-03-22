@@ -1,0 +1,5 @@
+MESSAGE "File: E:\Microcontroler\Micro\src\stack.vhd" 
+MESSAGE "Compile Entity "STACK"" 
+MESSAGE "Entity `STACK' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "STACK" of Entity "STACK"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

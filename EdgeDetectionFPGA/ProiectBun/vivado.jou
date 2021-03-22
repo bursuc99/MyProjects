@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jan  5 12:27:24 2021
+# Process ID: 35820
+# Current directory: D:/SSC-LAB/ProiectBun
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34948 D:\SSC-LAB\ProiectBun\ProiectBun.xpr
+# Log file: D:/SSC-LAB/ProiectBun/vivado.log
+# Journal file: D:/SSC-LAB/ProiectBun\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SSC-LAB/ProiectBun/ProiectBun.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property -dict [list CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/amongUs.bin.coe}] [get_ips ROM]
+generate_target all [get_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci]
+catch { config_ip_cache -export [get_ips -all ROM] }
+export_ip_user_files -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+reset_run ROM_synth_1
+launch_runs ROM_synth_1 -jobs 2
+wait_on_run ROM_synth_1
+export_simulation -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/amongUs.bin.coe}] [get_ips mem_filter]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property -dict [list CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/utcn.bin.coe}] [get_ips ROM]
+generate_target all [get_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci]
+catch { config_ip_cache -export [get_ips -all ROM] }
+export_ip_user_files -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+reset_run ROM_synth_1
+launch_runs ROM_synth_1 -jobs 2
+wait_on_run ROM_synth_1
+export_simulation -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/ROM/ROM.xci] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/utcn.bin.coe}] [get_ips mem_filter]
+generate_target all [get_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.xci]
+catch { config_ip_cache -export [get_ips -all mem_filter] }
+export_ip_user_files -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.xci] -no_script -sync -force -quiet
+reset_run mem_filter_synth_1
+launch_runs mem_filter_synth_1 -jobs 2
+wait_on_run mem_filter_synth_1
+export_simulation -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.xci] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property -dict [list CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/utcn.bin.coe}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci]
+export_simulation -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+synth_design -rtl -name rtl_1
+create_bd_design "design_1"
+generate_target all [get_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+open_bd_design {D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd}
+export_ip_user_files -of_objects  [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1/design_1.bd
+file delete -force D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/bd/design_1

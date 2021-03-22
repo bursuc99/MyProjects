@@ -1,0 +1,79 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$S 1 1 zeroflag
+$S 5 1 CARRY
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 41 2 8 sy_out
+$SC 9-37/4
+$BUS S 74 2 8 alu_out
+$SC 42-70/4
+$BUS S +37 2 8 port_id_out
+$SC 75-+28/4
+$BUS S +37 2 8 OUTPUT
+$SC 108-+28/4
+$BUS S +37 2 8 last_port_id
+$SC 141-+28/4
+$S +5 1 carryflag
+$IN +4 1 clock
+$OUT +4 1 write_strobe
+I 3 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +20 3 4 sy_adr
+$SC 186-+12/4
+$S +5 1 CLK
+$BUS S +36 2 8 program_counter_out
+$SC 207-+28/4
+I 4 "a#29#std_logic_vector(15 downto 0)1 ricd15 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +69 4 16 inst
+$SC 240-+60/4
+$S +5 1 program_counter_reset
+$S +4 1 port_enable
+$BUS S +36 2 8 const
+$SC 313-+28/4
+I 5 "a#28#std_logic_vector(4 downto 0)1 ricd4 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +25 5 5 alu_cmd
+$SC 346-+16/4
+I 6 "a#28#std_logic_vector(6 downto 0)1 ricd6 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT +33 6 7 dis_info
+$SC 367-+24/4
+$BUS S +25 5 5 flow_cmd
+$SC 396-+16/4
+$BUS S +37 2 8 sx_out
+$SC 417-+28/4
+$S +5 1 reg_input_cmd
+$OUT +4 1 read_strobe
+$BUS OUT +36 2 8 alu_verificare
+$SC 458-+28/4
+$BUS S +21 3 4 sx_adr
+$SC 491-+12/4
+$IN +5 1 INTERRUPT
+$IN +4 1 Reset
+$BUS OUT +20 3 4 sel_dis
+$SC 516-+12/4
+$BUS S +37 2 8 input_registers
+$SC 533-+28/4
+I 7 "a#28#std_logic_vector(1 downto 0)1 ricd1 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +13 7 2 port_cmd
+$SC +-8 +4
+$BUS IN +37 2 8 input
+$SC 575-+28/4
+$S +5 1 reg_enable
+$S +4 1 INT
+$BUS S +36 2 8 ADDRESS
+$SC 616-+28/4
+I 8 "e#3#bitc2 01"
+$S +5 8 LOAD
+$S +4 8 LOADR
+$BUS S +36 2 8 stack_to_counter
+$SC 657-+28/4
+$S +5 8 DOWN
+$S +4 1 INT_FLAG
+$BUS S +36 2 8 OUTPUT_STACK
+$SC 698-+28/4
+I 9 "a#17#reg8(15 downto 0)1 ricd15 0 a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +517 9 16 reg_matrix
+$SC 731-+508/4
+$S +21 8 UP
+$BUS S +516 9 16 stack_memory
+$SC 1264-+508/4
+$ENDWAVE

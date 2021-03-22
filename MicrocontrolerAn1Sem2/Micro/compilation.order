@@ -1,0 +1,18 @@
+.\src\LogicBlock.vhd
+.\src\Sum.vhd
+.\src\Shiftright.vhd
+.\src\ShiftLeft.vhd
+.\src\Alu.vhd
+.\src\Instruction_Decoding .vhd
+.\src\Instruction-Memory.vhd
+.\src\Registers.vhd
+.\src\package_types.vhd
+.\src\Port_Id_Control.vhd
+.\src\BIG_Black_Box.vhd
+.\src\Mux21on8.vhd
+.\src\clock_divider.vhd
+.\src\afisoare.vhd
+.\src\Interrupt.vhd
+.\src\program _flow .vhd
+.\src\stack.vhd
+.\src\Numaratoruuu.vhd

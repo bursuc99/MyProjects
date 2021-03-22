@@ -1,0 +1,29 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$IN 1 1 CLK
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT 37 2 8 sx_out
+$SC 5-33/4
+I 3 "a#17#reg8(15 downto 0)1 ricd15 0 a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 550 3 16 reg_matrix
+$SC 38-546/4
+$BUS S +53 2 8 rez_sy
+$SC 567-+28/4
+$BUS IN +37 2 8 input
+$SC 600-+28/4
+I 4 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS IN +21 4 4 Sx
+$SC 633-+12/4
+$BUS IN +21 4 4 Sy
+$SC 650-+12/4
+$IN +5 1 reg_cmd
+$BUS OUT +36 2 8 sy_out
+$SC 671-+28/4
+$BUS S +37 2 8 rez_sx
+$SC 704-+28/4
+$BUS OUT +517 3 16 reg_out
+$SC 737-+508/4
+$BUS OUT +53 2 8 output
+$SC +-32-+28/4
+$ENDWAVE

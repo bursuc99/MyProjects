@@ -1,0 +1,24 @@
+[Files List]
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\STD/src/standard.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/stdlogic.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/numstd.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/arith.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/unsigned.vhd=S
+E:\Microcontroler\Micro/src/package_types.vhd=S
+E:\Microcontroler\Micro/src/Registers.vhd=S
+E:\Microcontroler\Micro/src/Mux21on8.vhd=S
+E:\Microcontroler\Micro/src/Sum.vhd=S
+E:\Microcontroler\Micro/src/LogicBlock.vhd=S
+E:\Microcontroler\Micro/src/ShiftLeft.vhd=S
+E:\Microcontroler\Micro/src/Shiftright.vhd=S
+E:\Microcontroler\Micro/src/Port_Id_Control.vhd=S
+E:\Microcontroler\Micro/src/Alu.vhd=S
+E:\Microcontroler\Micro/src/Instruction_Decoding .vhd=S
+E:\Microcontroler\Micro/src/Instruction-Memory.vhd=S
+E:\Microcontroler\Micro/src/clock_divider.vhd=S
+E:\Microcontroler\Micro/src/afisoare.vhd=S
+E:\Microcontroler\Micro/src/Interrupt.vhd=S
+E:\Microcontroler\Micro/src/stack.vhd=S
+E:\Microcontroler\Micro/src/program _flow .vhd=S
+E:\Microcontroler\Micro/src/Numaratoruuu.vhd=S
+E:\Microcontroler\Micro/src/BIG_Black_Box.vhd=S

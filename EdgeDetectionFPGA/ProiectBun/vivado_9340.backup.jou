@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Nov  9 15:28:21 2020
+# Process ID: 9340
+# Current directory: D:/SSC-LAB/ProiectBun
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17532 D:\SSC-LAB\ProiectBun\ProiectBun.xpr
+# Log file: D:/SSC-LAB/ProiectBun/vivado.log
+# Journal file: D:/SSC-LAB/ProiectBun\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SSC-LAB/ProiectBun/ProiectBun.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{c:/Users/Zoican Denis/Desktop/alex.bin.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{c:/Users/Zoican Denis/Desktop/slack.bin.coe}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/Zoican Denis/Desktop/alex.bin.coe} {c:/Users/Zoican Denis/Desktop/slack.bin.coe}}
+update_files -from_files C:/Users/catal/OneDrive/Desktop/amongUs.bin.coe -to_files {{c:/Users/Zoican Denis/Desktop/amongUs.bin.coe}} -filesets [get_filesets *]
+export_ip_user_files -of_objects  [get_files {{c:/Users/Zoican Denis/Desktop/m128.bin.coe}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/Zoican Denis/Desktop/m128.bin.coe}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+export_ip_user_files -of_objects  [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter/mem_filter.xci] -no_script -reset -force -quiet
+remove_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter/mem_filter.xci
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name mem_filter -dir d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {mem_filter} CONFIG.Write_Width_A {24} CONFIG.Write_Depth_A {16384} CONFIG.Read_Width_A {24} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {24} CONFIG.Read_Width_B {24} CONFIG.Fill_Remaining_Memory_Locations {true}] [get_ips mem_filter]
+generate_target {instantiation_template} [get_files d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.xci]
+generate_target all [get_files  d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.xci]
+catch { config_ip_cache -export [get_ips -all mem_filter] }
+export_ip_user_files -of_objects [get_files d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.xci]
+export_simulation -of_objects [get_files d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/mem_filter_1/mem_filter.xci] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  D:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci
+update_files -from_files D:/SSC-LAB/ProiectBun/amongUs.bin.coe -to_files C:/Users/catal/OneDrive/Desktop/amongUs.bin.coe -filesets [get_filesets *]
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip
+set_property -dict [list CONFIG.Write_Width_A {24} CONFIG.Write_Depth_A {16384} CONFIG.Read_Width_A {24} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {24} CONFIG.Read_Width_B {24} CONFIG.Load_Init_File {true} CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/amongUs.bin.coe} CONFIG.Fill_Remaining_Memory_Locations {false}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci]
+generate_target all [get_files  d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci]
+launch_runs blk_mem_gen_0_synth_1 -jobs 2
+wait_on_run blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property -dict [list CONFIG.Coe_File {D:/SSC-LAB/ProiectBun/image.bin.coe}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_0_synth_1
+launch_runs blk_mem_gen_0_synth_1 -jobs 2
+wait_on_run blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files d:/SSC-LAB/ProiectBun/ProiectBun.srcs/sources_1/ip/blk_mem_gen_0_3/blk_mem_gen_0.xci] -directory D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/sim_scripts -ip_user_files_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files -ipstatic_source_dir D:/SSC-LAB/ProiectBun/ProiectBun.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/modelsim} {questa=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/questa} {riviera=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/riviera} {activehdl=D:/SSC-LAB/ProiectBun/ProiectBun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SSC-LAB/ProiectBun/ProiectBun.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

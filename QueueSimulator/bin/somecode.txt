@@ -1,0 +1,21 @@
+public void run() {
+		while (available) {
+			try {
+				if (waitingPeriod.get() > 0) {
+					Task x=tasks.peek();
+					  while(x.getProcessingTime()>0) {
+						  x.decrementProcessingTime();
+						  wait();
+					  }
+				
+					waitingPeriod.decrementAndGet();
+					Task t = tasks.take();
+				}
+			
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
+		}
+
+	}

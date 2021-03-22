@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Simulation_main_vga_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Simulation_main_vga" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="20000006666fs"></ZoomStartTime>
+      <ZoomEndTime time="44000046667fs"></ZoomEndTime>
+      <Cursor1Time time="40000040000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="127"></NameColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/Simulation_main_vga/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/Stare" type="other">
+      <obj_property name="ElementShortName">Stare</obj_property>
+      <obj_property name="ObjectShortName">Stare</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/addr1" type="array">
+      <obj_property name="ElementShortName">addr1[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addr1[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/dout1" type="array">
+      <obj_property name="ElementShortName">dout1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">dout1[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/din1" type="array">
+      <obj_property name="ElementShortName">din1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">din1[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/hsync" type="logic">
+      <obj_property name="ElementShortName">hsync</obj_property>
+      <obj_property name="ObjectShortName">hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/vsync" type="logic">
+      <obj_property name="ElementShortName">vsync</obj_property>
+      <obj_property name="ObjectShortName">vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/R" type="array">
+      <obj_property name="ElementShortName">R[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/G" type="array">
+      <obj_property name="ElementShortName">G[3:0]</obj_property>
+      <obj_property name="ObjectShortName">G[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/B" type="array">
+      <obj_property name="ElementShortName">B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/we_ram" type="array">
+      <obj_property name="ElementShortName">we_ram[0:0]</obj_property>
+      <obj_property name="ObjectShortName">we_ram[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/addra" type="array">
+      <obj_property name="ElementShortName">addra[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/dina" type="array">
+      <obj_property name="ElementShortName">dina[23:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/douta" type="array">
+      <obj_property name="ElementShortName">douta[23:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/H_DISPLAY" type="other">
+      <obj_property name="ElementShortName">H_DISPLAY</obj_property>
+      <obj_property name="ObjectShortName">H_DISPLAY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/H_L_BORDER" type="other">
+      <obj_property name="ElementShortName">H_L_BORDER</obj_property>
+      <obj_property name="ObjectShortName">H_L_BORDER</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/vPos" type="other">
+      <obj_property name="ElementShortName">vPos</obj_property>
+      <obj_property name="ObjectShortName">vPos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/hPos" type="other">
+      <obj_property name="ElementShortName">hPos</obj_property>
+      <obj_property name="ObjectShortName">hPos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulation_main_vga/M1/VGA1/videoOn" type="logic">
+      <obj_property name="ElementShortName">videoOn</obj_property>
+      <obj_property name="ObjectShortName">videoOn</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,199 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#3#bitc2 01"
+$S 1 1 LOADR
+$S 5 1 LOAD
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+I 3 "e#9#std_logicc9 UX01ZWLH-"
+$BUS S 41 2 8 OUTPUT_STACK
+$SC 9-37/4
+$BUS S 74 2 8 stack_to_counter
+$SC 42-70/4
+I 4 "a#17#reg8(15 downto 0)1 ricd15 0 a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 587 4 16 reg_matrix
+$SC 75-583/4
+$BUS S +53 2 8 ADDRESS
+$SC 604-+28/4
+$IN +5 3 Reset
+$IN +4 3 INTERRUPT
+$BUS IN +36 2 8 input
+$SC 645-+28/4
+I 5 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT +21 5 4 sel_dis
+$SC 678-+12/4
+$IN +5 3 clock
+$S +4 1 DOWN
+I 6 "a#28#std_logic_vector(4 downto 0)1 ricd4 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +24 6 5 alu_cmd
+$SC 703-+16/4
+$S +5 3 INT_FLAG
+$S +4 3 INT
+$BUS S +36 2 8 sy_out
+$SC 732-+28/4
+I 7 "a#29#std_logic_vector(15 downto 0)1 ricd15 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +69 7 16 inst
+$SC 765-+60/4
+$BUS S +37 2 8 alu_out
+$SC 830-+28/4
+$BUS OUT +37 2 8 alu_verificare
+$SC 863-+28/4
+$BUS S +21 5 4 sx_adr
+$SC 896-+12/4
+$BUS S +37 2 8 program_counter_out
+$SC 913-+28/4
+$BUS S +21 5 4 sy_adr
+$SC 946-+12/4
+$S +5 3 program_counter_reset
+I 8 "a#28#std_logic_vector(1 downto 0)1 ricd1 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +12 8 2 port_cmd
+$SC +-8 +4
+$BUS S +37 2 8 const
+$SC 976-+28/4
+$BUS S +37 2 8 port_id_out
+$SC +-32-+28/4
+$S +5 3 carryflag
+$S +4 3 zeroflag
+$S +4 3 reg_input_cmd
+$BUS S +36 2 8 last_port_id
+$SC +-32-+28/4
+$BUS S +37 2 8 OUTPUT
+$SC +-32-+28/4
+$S +5 3 CLK
+$OUT +4 3 write_strobe
+$BUS S +36 2 8 sx_out
+$SC +-32-+28/4
+$BUS S +37 2 8 input_registers
+$SC +-32-+28/4
+$S +5 3 reg_enable
+$OUT +4 3 read_strobe
+I 9 "a#28#std_logic_vector(6 downto 0)1 ricd6 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT +32 9 7 dis_info
+$SC +-28-+24/4
+$BUS S +25 6 5 flow_cmd
+$SC +-20-+16/4
+$S +5 1 UP
+$S +4 3 port_enable
+$S +4 3 CARRY
+$IN 637 0 Reset
+$IN +58 0 clock
+$BUS IN +569 2 8 input
+$SC 645-+28/4
+$OUT +525 0 read_strobe
+$OUT +-74 0 0 7 write
+$BUS S +141 2 8 program_counter_out
+$SC 913-+28/4
+$BUS S +325 7 16 inst
+$SC 765-+60/4
+$BUS S +442 2 8 port_id_out
+$SC 1009-+28/4
+$BUS S +231 2 8 last_port_id
+$SC 1054-+28/4
+$BUS S +187 2 8 Output
+$SC 1087-+28/4
+$S +5 0 CLK
+$BUS S +150 2 8 OUTPUT
+$SC 1087-+28/4
+$BUS S +156 2 8 ADDRESS
+$SC 604-+28/4
+$S 1 0 LOADR
+$IN 637 0 RESET
+$S 5 0 LOAD
+$BUS S 1272 2 8 OUTPUT_STACK
+$SC 9-37/4
+$S 1120 0 CLK
+$ENDTIME 100000
+$WAVES 1 5 699 +553
+=0 T 0
+$VALUES
+V 1
+0
+$END
+$WAVES 1046
+*0
+=1 D 0 2
+=2 D 0 5
+$VALUES
+V 3
+U
+0
+1
+$END
+$WAVES 9-37/4 +5-70/4 641-+32/4 +5-+12/4 +5 +33 +37-+60/4 +377-+24/4
+*0
+$VALUES
+V 1
+U
+$END
+$WAVES 75-583/4 707 +12 +5 +8-+28/4 896-+12/4 +5-+28/4 +5-+12/4 +5-+8/4 +5-+28/4 +46 +70 +8-+28/4 +38 +45-+8/4 +9
+*0
+=3 D 0 1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 604-+12/4 +21 +623
+*0
+$VALUES
+V 1
+0
+$END
+$WAVES 620-+12/4
+*0
+$VALUES
+V 1
+1
+$END
+$WAVES +71 +8 +4 +516 +4
+*0
+*3
+$VALUES
+V 2
+U
+1
+$END
+$WAVES 830 +37-+24/4 +274-+24/4
+*0
+*2
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 834-+24/4 +184
+*0
+=4 D 0 4
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 863 +298
+*0
+=5 D 0 6
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 1009-+28/4 +87 +74
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 1054-+28/4 +5-+28/4
+*0
+*1
+$VALUES
+V 2
+U
+Z
+$END
+$ENDTIME 200000
+$ENDTIME 300000
+$ENDTIME 400000
+$ENDTIME 500000
+$ENDWAVE
